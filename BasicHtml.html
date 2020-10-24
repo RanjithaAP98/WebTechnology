@@ -1,0 +1,235 @@
+<!--Basic structure of HTML-->
+<html doctype!> <!--Version 5-->
+<html>
+    <head>
+    <title>HTML PAGE</title>
+
+
+    <!--Internal CSS-->
+    <style>
+p{
+    color:green;
+}
+
+    </style>
+    </head>
+
+        <body>
+            <h3>This is my second  html program</h3>
+            <div>
+                HTML --> Hyper text markup language. <br>
+                HTML is case insensitive.<br>
+                HTML is a design language<br>
+        </div>
+
+        <p>Welcome to HTML,CSS,JavaScript</p>
+        <p>This is My first HTML code</p>
+
+        <div>
+            Headings in html
+       </div>
+       <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6><br>
+
+
+        <h2>Some special symbols :</h2>
+        <div> &copy; <br> &reg; <br> &trade; <br> &cent;<br>&yen;<br>&euro;<br></div>
+
+        <h2>The Five Special characters :</h2>
+        <div>&quot; <br> &apos;<br> &amp;<br>&lt;<br> &gt;<br></div>
+
+
+       <div>
+           a<sup>2</sup>+b<sup>2</sup> <br>
+       </div>
+
+       <div>
+        a<sub>2</sub>+b<sub>2</sub><br>
+       </div>
+
+       <!--How to add the contents  adjacent-->
+       <span>First</span> Second<br>
+
+    <!--opening the tab in current tab-->
+        <div>   
+        <a href="https://www.facebook.com/">Facebook</a><br>
+        </div>
+
+        <!--opening the tab in new tab-->
+        <div>
+       <a href="https://www.facebook.com/" target="_blank">Facebook</a><br>
+    </div>
+
+
+    <div><a href="http://www.x-workz.in/">Xworkz Odc</a></div><br>
+    
+
+
+    <!--List In HTML-->
+
+    <!--Ordered List-->
+    <h4>Lists in html </h4>  
+    <h5>Ordered Lists </h5>  
+    <div>
+        <ol type="A">
+            <li>Home</li>
+            <li>Sign in</li>
+            <li>sign up</li>
+        </ol>
+    </div>  
+
+
+    <!--UnOrdered List-->
+    <h5>UnOrdered Lists </h5>   
+    <div>
+        <ul type="square">
+            <li>Home</li>
+            <li>Sign In</li>
+            <li>Sign Up</li>
+        </ul>
+    </div>
+
+
+    <!--How to load an Image-->
+    <div>
+    <img src="C:\WebPrograms\Images\IMG_0582.JPG" alt =" Water falls" height= '200px' width="200px">
+    </div><br>
+
+    <div>
+        <img src="https://www.karnataka.com/wp-content/uploads/2009/07/xjog-falls-01.jpg.pagespeed.ic.uFneTCzB3i.jpg " alt="jog-falls" width="200" height="200"> 
+    </div><br>
+
+
+
+                       <!--Table-->
+    <h2>Tables</h2>
+
+            <table border = "1" >
+                <caption>Tree&apos;s information</caption>
+                    <thead>
+                    <tr>
+                        <th>    </th>
+                        <th>pine</th>
+                        <th>maple</th>
+                        <th>oak</th>
+                        <th>fir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th>Avarage hight</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    </tr> 
+                    
+                    <tr>
+                        <th>Avarage width</th>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <th>Typical lifespan</th>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>8</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Leaf time</th>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>8</td>
+                    </tr>
+
+            </tbody>  
+            </table><br>
+
+
+            <h1>The audio element</h1>
+            <p>Click on the play button to play a sound:</p>
+
+            <audio controls>
+                <source src="C:\WebPrograms\Audio\Let me love.mp3" type="audio/ogg">
+               
+              Your browser does not support the audio element.
+              </audio>
+            
+            <h1>The video element</h1>
+            <video class="video" width="320" height="240" controls>
+                <source src="C:\WebPrograms\vedio\0dffc21922314a438b928f4aed364e04.mp4" type="video/mp4">
+               
+              Your browser does not support the video tag.
+              </video>
+            <br>
+             
+            <p>The easiest way to play videos in HTML, is to use YouTube.(using iframe tag )</p>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+            
+            <br>
+
+            
+
+                                <!--Form-->
+
+            <div><form>
+
+                <div><h2>Application Form</h2></div><br>
+     
+                <label for="uname">Enter a Name:</label>
+                <input type="text" name="name"  required autocomplete="off" placeholder="Enter a Name"><br>
+     
+                <label>Enter a Email:</label>
+                <input type="email" name="email"  required autocomplete="off" placeholder="Enter a Email"><br>
+     
+                <label>Enter a Password:</label>
+                <input type="password" name="Password" maxlength="8" placeholder="Enter a Password"><br>
+     
+                <label>Select Gender</label>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="FeMale">FeMale
+                <input type="radio" name="gender" value="Others">Others<br>
+     
+                <label>Select Courses</label>
+                <input type="checkbox" >java
+                <input type="checkbox" >html
+                <input type="checkbox" >Css <br>
+     
+                <label>Enter a Age</label>
+                <input type="number" min="5" max="60" name="age"><br>
+     
+                <label>Enter a DOB</label>
+                <input type="date" name="dob"><br>
+     
+                <label>Select City</label>
+                <select>
+                    <option>--Select City--</option>
+                    <option>Bengaluru</option>
+                    <option>Tumkur</option>
+                    <option>Mysor</option>
+                    <option>Mandya</option>
+                </select><br>
+     
+                <label>Enter a Address </label>
+                <textarea rows="2" col="10"></textarea><br>
+     
+                <button type ="submit">Submit</button>
+                <button type="cancel">Cancle</button>
+     
+                 </form>
+     </div>
+
+   
+        </body>
+</html>

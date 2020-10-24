@@ -1,0 +1,106 @@
+p,div{
+    color:green;
+    text-decoration: uppercase;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    color:mediumvioletred;
+    text-decoration: uppercase;
+
+}
+
+#abc{
+    color: darkturquoise
+}
+
+#name{
+    color:bisque;
+    text-decoration: uppercase;
+}
+
+#sss{
+    text-decoration: uppercase;
+    color:indianred;
+
+    margin-left :20px;
+    border:2px dotted red;
+    padding :20px;
+    width:100px;
+    height:100px
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+
+
+#boxes{
+    float: left;
+    width:33.33%;
+   margin-left: 40px;
+   
+    border:2px dotted blue;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+   
+}
+
+#boxes2{
+    float: left;
+    width:33.33%;
+    border:2px dotted blue;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+
+.video{
+
+
+    margin: 40px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+.horizontal{
+    text-decoration: uppercase;
+    margin:20px;
+}
+
+li{
+    float: left;
+    display: block;
+  color: blue;
+  
+  padding: 16px;
+  text-decoration: none
+}
+
+
+
+/* div p{
+    color:dark green;
+} */
+
+
+<!--Child Css Selector-->
+div>p{
+    color:darkturquoise;
+}
+
+
+div+p{
+    color:darkorchid;
+}
+
+
+div~p{
+    color:darkviolet;
+}

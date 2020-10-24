@@ -1,0 +1,78 @@
+<html doctype!> <!--Version 5-->
+<html>
+    <head>
+    <title>Registration PAGE</title>
+    </head>
+
+        <body>
+            <div>
+                <form >
+                    <label for="uname">Enter a Name:</label>
+                    <input type="text" name="name" placeholder="Enter a Name"  required autocomplete="off"  id="uname" maxlength="6"  >
+                    <br>
+                    
+
+                    <label>Enter a Email:</label>
+                    <input type="email" name="email"  required autocomplete="off" required placeholder="Enter a Email" >
+                    <br>
+
+                    <label>Enter Password</label>
+                    <input type="password" name="psw"  required placeholder="Enter the password" minlength="5">
+                     <br>
+
+                    <label>Select Gender</label>
+                    <input type="radio" name="gender"  value="male" id="male">Male
+                    <input type ="radio" name="gender"  value="female" id ="female">Female
+                    <input type ="radio" name="gender" value="others" id="others" >others
+                    <br>
+
+                    <label>Select Course</label>
+                    <input type ="checkbox"  name="" value="" >java
+                    <input type ="checkbox"  name="" value="" >html
+                    <input type ="checkbox"  name="" value="" >css
+                    <input type ="checkbox"  name="" value="" >selenium
+                    <br>
+
+
+                    <!--Age-->
+                    <label>Enter age:</label>
+                    <input type="number" name="age" min="0"  max="100">
+                    <br>
+
+                    <label>Enter DOB</label>
+                    <input type="date" name="dob">
+                    <br>
+
+
+                    <!--how to select  city in list-->
+                    <lable>Select city</lable>
+                    <select>
+                        <option>--Select City---</option>
+                        <option>--Bangalore---</option>
+                        <option>--Mangalore---</option>
+                        </select>
+                        <br>
+
+                        <label>Enter Address</label>
+                        <textarea rows="1"  cols="10"></textarea>
+                        <br>
+
+                        <!--type="submit"  in input tab stores all the values  , <button type="button">Submit</button>-->
+                        <button type="submit">Submit</button>
+                        
+                        <button type="button">reset</button>
+
+                        <!--Age strats value  form 0 max value is 100 -->
+                        <!--restricts the field length to 6 characters-->
+                        <!--turn of the -->
+
+                    </select>
+
+
+
+                    </form>
+            </div>
+
+
+        </body>
+</html>

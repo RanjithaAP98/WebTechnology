@@ -1,0 +1,43 @@
+<!doctype html> 
+<html>
+        <head>
+                <title>This is my page</title>
+                 <!--Internal or Embedded CSS-->
+                <style>
+                    h1{
+                        color :blue;
+                        font-size: 25px;
+                        font-style: initial;
+                    }
+                    </style>
+                <link rel="stylesheet" href="ExternalStyleSheet.css">
+        </head>
+        <body>  
+            <h1>--Internal or Embedded CSS--</h1>
+            <p>
+                Internal or Embedded CSS: This can be used when a single HTML document must be styled uniquely. <br>
+                The CSS rule set should be within the HTML file in the head section <br>
+                i.e the CSS is embedded within the HTML file.<br>
+            </p>
+                
+                <!--External Css-->
+            <h1>--External Css--</h1>
+            <p>External CSS contains separate CSS file which contains only style property with the help of tag attributes.<br>
+                CSS property written in a separate file with .css extension and should be linked to the HTML document using link tag.<br>
+                This means that for each element, style can be set only once and that will be applied across web pages.<br>
+            </p>
+             
+
+                    
+                     <!--Inline Css-->
+            <h1 style = "color:salmon; font-size:25px; 
+                     font-style:italic; text-align:left;"> 
+                     --Inline CSS--
+            </h1>
+             <p style="color: springgreen;"> Inline CSS contains the CSS property in the body section attached with element is known as inline CSS.<br>
+                         This kind of style is specified within an HTML tag using the style attribute.
+             </p>
+                
+                 
+        </body>
+</html>
