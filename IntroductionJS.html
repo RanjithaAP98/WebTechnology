@@ -1,0 +1,278 @@
+<!doctype html> 
+<html>
+        <head>
+                <title>Introduction to js</title>
+                <script>
+                        console.log("Hello javascript")
+                        document.write("Hello to scripting language")
+                        alert("Introduction to js")
+      
+
+                //Datatype in js
+
+                var a
+                console.log(a)
+
+                var a=10;
+                console.log(a)
+
+                var a=20;
+                console.log(a)
+                console.log(typeof(a))
+
+                var b
+                console.log(typeof(b))
+
+                var b = 10.20
+                console.log(typeof(b))
+
+                       
+                 //let --> allows you to declare variables
+
+                let c
+                console.log(c)  
+                console.log(typeof(c))    
+
+                let d = 23
+                console.log(d)
+                // d=12      --->error
+               // console.log(d)
+
+               
+               //constant-->const cannot be reassigned
+
+               const z=10;
+               console.log(z)
+               // z = 2
+               // console.log(z)
+
+
+
+               
+
+               //function
+
+               var x = MyFunction(4,3);
+               console.log(x)
+               function MyFunction(m,n) {
+                       return m * n ;
+               }
+
+
+               //called functio in form
+               function submitFormEvent(){
+                       console.log("submited")
+
+                       console.log(document.getElementById("name"))
+
+                       let name = document.getElementById("name").value
+                       console.log(name)
+
+                       let age=document.getElementById("age").value
+                       console.log(age)
+
+                       let res = document.getElementById("res")
+                       console.log(res)
+                       res.innerHTML = "Submitting form"
+               }
+
+               function submitEvent(){
+                       console.log("calling submit")
+
+                       console.log(document.getElementById("num1"))
+
+                       let num1 = document.getElementById("num1").value
+                       console.log(num1)  
+
+                       let num2 = document.getElementById("num2").value
+                       console.log(num2)  
+
+                       let total = Number(num1) + Number(num2)
+                       console.log(total)
+
+                      // let sum = parseInt(num1) + parseInt(num2)
+                      // console.log(sum)
+                      //console.log(num1 + num2) ==> print 12
+
+                       let result = document.getElementById("result")
+                       console.log(result)
+                       result.innerHTML = "Adding result"
+                      }
+
+                      function register(){
+                              console.log("calling register")
+
+                              let name = document.getElementById("name").value
+                              if(name.length == ""){
+                                      let err = document.getElementById("err")
+                                     //console.log("Please enter a name")
+                                      err.innerHTML = "Please enter a name"
+                                      err.style.color = "red"
+                              }
+
+                              let email = document.getElementById("email").value
+                              if(email.length == ""){
+                                let errmail = document.getElementById("errmail")
+                                errmail.innerHTML = "Please enter a email"
+                                errmail.style.color = "red"
+                              }
+
+                              let password = document.getElementById("password").value
+                              if(password.length == ""){
+                                let errpwd = document.getElementById("errpwd")
+                                errpwd.innerHTML = "Please enter a password"
+                                errpwd.style.color = "red"
+                              }
+
+                              if(document.reg.gender[0].checked == false){
+                                let errgender = document.getElementById("errgender")
+                                errgender.innerHTML = "please select a gender"
+                                errgender.style.color = "red"
+                              }
+
+                              if(document.reg.city.value == "0"){
+                                let errcity = document.getElementById("errcity")
+                                errcity.innerHTML = "please select a city"
+                                errcity.style.color = "red"
+                              }
+                      }
+
+                      let arr = []
+                      console.log(arr)
+
+                      arr.push(10) //push add element at end
+                      console.log(arr)
+                      arr.push(20)
+                      console.log(arr)
+
+                      arr.unshift(30) //unshift add element at beginning
+                      console.log(arr)
+
+                      arr.pop() //pop remove element at end
+                      console.log(arr)
+
+                      arr.shift()  //shift remove element at beginning
+                      console.log(arr)
+
+                      arr.push(50)
+                      arr.push(60)
+                      console.log(arr)
+
+                      arr.splice(1)
+                      console.log(arr)
+
+                      //IIFE
+                      
+                      console.log("invoking iife")
+                      var myVar = setInterval(myTimer, 1000);  // Display the current time 
+
+                        function myTimer() {
+                        var d = new Date();
+                        var t = d.toLocaleTimeString();
+                        document.getElementById("demo").innerHTML = t;
+                        }
+
+                        (function () {
+                               // setTimeout(goToPage,2000)
+                        })()
+
+                        function goToPage(){
+                              window.location = "https://www.w3schools.com/"       
+                       }
+
+                       //Storage in javascript
+
+                        //localStorage - stores data with no expiration date
+                        //sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+
+                        localStorage.setItem("name","Ranjitha A P")
+                        //localStorage.clear()
+
+                        sessionStorage.setItem("name", "Ranjitha")
+
+
+                </script>
+        </head>
+        <body> 
+
+                <form>
+                        <div>
+                               <div><label>Enter the name</label><input type="text" name="name" id="name"></div>
+                                <div><label>Enter the age</label><input type="number" name="age" id="age"></div>
+                                <button type="button" onclick="submitFormEvent()">Submit</button>
+                                <span id="res"></span>
+                        </div>
+                </form><br>
+
+
+                <form>
+                        <div>
+                                <label>Enter a number1</label>
+                                <input type="text" name="num" id="num1">
+                        </div>
+
+                        <div>
+                                <label>Enter a number2</label>
+                                <input type="text" name="num" id="num2">
+                        </div>
+
+                        <button type="button" onclick="submitEvent()">Submit</button>
+                        <span id="result"></span>
+
+                </form><br>
+
+
+                <div>Registeration form</div>
+                <form action= "" method="" name="reg">
+                        
+                        <div>
+                                <label>Enter a Name</label>
+                                <input type="text" name="uname" id="name">
+                                <span id="err"></span>
+                        </div><br>
+
+                        <div>
+                                <label>Enter a Email</label>
+                                <input type="email" name="email" id="email">
+                                <span id="errmail"></span>
+                        </div><br>
+
+                        <div>
+                                <label>Enter a Password</label>
+                                <input type="password" name="password" id="password">
+                                <span id="errpwd"></span>
+                        </div><br>
+
+                        <div>
+                               <label>Select Gender</label>
+                                <input type="radio" name="gender"  value="male" id="male">Male
+                                <input type ="radio" name="gender"  value="female" id ="female">Female
+                                <input type ="radio" name="gender" value="others" id="others" >others
+                                <span id="errgender"></span>
+                        </div><br>
+
+
+                        <div>
+                                <lable>Select City</lable>
+                                <select name="city">
+                                <option value="0">--Select City---</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="mangalore">Mangalore</option>
+                                </select>
+                                <span id="errcity"></span>
+                        </div><br>
+
+                       
+                        <button type="button" onclick="register()">Submit</button>
+                        <button type="reset">Cancel</button>
+                </form>
+
+                <div>
+                        <p>A script on this page starts this clock:</p>
+                        <p id="demo"></p>
+                </div>
+
+                
+               
+         </body>
+</html>          
