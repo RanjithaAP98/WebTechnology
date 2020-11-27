@@ -1,4 +1,5 @@
 # WebTechnology
 
-GitHub WebPage Link:
+WebTechnology Repository GitHub Link:
+
 https://ranjithaap98.github.io/WebTechnology/
